@@ -4,9 +4,9 @@
   "version": "${version}",
   "name": "CollisionFix",
   "description": "Ported mod Entity Collision FPS Fix to 1.20 and above.",
-  "authors": ["LopyMine", "CorgiTaco"],
+  "authors": ["LopyMine", "CorgiTaco [Author]"],
   "contact": {},
-  "license": "MIT",
+  "license": "CC0-1.0",
   "icon": "assets/collisionfix/icon/icon.png",
   "environment": "client",
   "entrypoints": {
