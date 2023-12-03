@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "collisionfix",
+  "version": "${version}",
+  "name": "CollisionFix",
+  "description": "Ported mod Entity Collision FPS Fix to 1.20 and above.",
+  "authors": ["LopyMine", "CorgiTaco"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/collisionfix/icon/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "net.lopymine.collisionfix.CollisionFix"
+    ]
+  },
+  "mixins": [
+    "colisionfix.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": ["1.20", "1.20.1", "1.20.2", "1.20.3"]
+  }
+}
