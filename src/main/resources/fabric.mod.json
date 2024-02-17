@@ -3,7 +3,7 @@
   "id": "collisionfix",
   "version": "${version}",
   "name": "CollisionFix",
-  "description": "Ported mod Entity Collision FPS Fix to 1.20 and above.",
+  "description": "Fabric mod that removes client-side collisions checks",
   "authors": ["LopyMine", "CorgiTaco [Author]"],
   "contact": {},
   "license": "CC0-1.0",
