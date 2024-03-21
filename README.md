@@ -1,6 +1,4 @@
-# Collision Fix
-[![Discord](https://cdn.discordapp.com/attachments/622183123681017867/1142042145356779631/discord.png)](https://discord.gg/NZzxdkrV4s)
-[![Modrinth](https://cdn.discordapp.com/attachments/622183123681017867/1182017751678726254/image_14.png)](https://modrinth.com/mod/collision-fix)
+[![Discord link to the Collision Fix discrod server](https://cdn.modrinth.com/data/cached_images/219842bdb5bbef9c2038ec2cc67a350a3fa092fd.png)](https://discord.gg/NZzxdkrV4s)
 
 ### Description
 ---
