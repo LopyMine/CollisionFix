@@ -3,7 +3,7 @@
 ### Description
 ---
 
-Collision Fix is a Fabric Mod that removes client-side collisions checks. 
+Collision Fix is a Fabric Mod that removes client-side collisions checks.
 
 ---
 
