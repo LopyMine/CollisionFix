@@ -1,7 +1,5 @@
 [![Discord link to the "LopyMine's Project" discrod server](img/discord_banner.png)](https://discord.gg/NZzxdkrV4s)
 
-# Collision Fix
-
 ### Description
 ---
 
