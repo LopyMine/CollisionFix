@@ -1,24 +1,32 @@
 {
-  "schemaVersion": 1,
-  "id": "collisionfix",
-  "version": "${version}",
-  "name": "CollisionFix",
-  "description": "Fabric mod that removes client-side collisions checks",
-  "authors": ["LopyMine", "CorgiTaco [Author]"],
-  "contact": {},
-  "license": "CC0-1.0",
-  "icon": "assets/collisionfix/icon/icon.png",
-  "environment": "client",
-  "entrypoints": {
-    "main": [
-      "net.lopymine.collisionfix.CollisionFix"
+    "schemaVersion": 1,
+    "id": "${mod_id}",
+    "version": "${mod_version}",
+    "name": "${mod_name}",
+    "description": "${mod_description}",
+    "authors": [
+        "${mod_authors}"
+    ],
+    "contact": {
+        "homepage": "https://modrinth.com/mod/${mod_id}",
+        "issues": "https://github.com/LopyMine/${mod_id}"
+    },
+    "license": "${mod_license}",
+    "icon": "icon/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "net.lopymine.collisionfix.CollisionFix"
+        ]
+    },
+    "depends": {
+        "fabricloader": ">=${fabric_loader}",
+        "minecraft": ">=${minecraft}",
+        "java": ">=${java}",
+        "${fabric_api_id}": "*"
+    },
+    "accessWidener": "aws/${minecraft}.accesswidener",
+    "mixins": [
+        "${mod_id}.mixins.json"
     ]
-  },
-  "mixins": [
-    "collisionfix.mixins.json"
-  ],
-  "depends": {
-    "fabricloader": ">=${loader_version}",
-    "minecraft": ">=1.20"
-  }
 }
