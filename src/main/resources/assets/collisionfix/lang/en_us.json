@@ -1,0 +1,29 @@
+{
+	"modmenu.descriptionTranslation.${mod_id}": "${mod_description}",
+
+	"${mod_id}.modmenu.category.general.name": "General",
+
+	"${mod_id}.modmenu.group.main.name": "Main",
+	"${mod_id}.modmenu.group.main.description": "Main settings for the mod.",
+
+	"${mod_id}.modmenu.option.mod_enabled.name": "Mod Enabled",
+	"${mod_id}.modmenu.option.mod_enabled.description": "If enabled, you will not collide with entities; if disabled, you will.",
+
+	"${mod_id}.modmenu.option.server_list.name": "§lServer List",
+	"${mod_id}.modmenu.option.server_list.description": "List of server IPs or hostnames where the mod should be enabled or disabled.",
+
+	"${mod_id}.modmenu.option.server_list_mode.name": "Server List Mode",
+	"${mod_id}.modmenu.option.server_list_mode.description": "Defines whether the server list is treated as a blacklist or a whitelist.",
+
+	"${mod_id}.list_mode.blacklist": "Blacklist",
+	"${mod_id}.list_mode.whitelist": "Whitelist",
+
+	"${mod_id}.modmenu.group.entity_list.name": "Entity List",
+	"${mod_id}.modmenu.group.entity_list.description": "Configure collision behavior for individual entities.",
+
+	"${mod_id}.modmenu.option.entity.name": "%s Collision",
+	"${mod_id}.modmenu.option.entity.description": "If enabled, you will collide with %s; if disabled, won't."
+}
+
+
+

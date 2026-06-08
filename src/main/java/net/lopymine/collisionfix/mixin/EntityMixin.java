@@ -1,7 +1,9 @@
 package net.lopymine.collisionfix.mixin;
 
-import net.minecraft.entity.Entity;
-import net.minecraft.world.World;
+import net.lopymine.collisionfix.manager.EntityCollisionManager;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.level.Level;
+
 import org.spongepowered.asm.mixin.*;
 import org.spongepowered.asm.mixin.injection.*;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
@@ -9,27 +11,19 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(Entity.class)
 public abstract class EntityMixin {
 
-	//? if >=1.21.9 {
 	@Shadow
-	public abstract World getEntityWorld();
-	//?} else {
-	/*@Shadow
-	public abstract World getWorld();
-	*///?}
+	public abstract Level level();
 
-    @Inject(method = "isInsideWall", at = @At("HEAD"), cancellable = true)
+	@Inject(method = "isInWall", at = @At("HEAD"), cancellable = true)
     private void isInsideWall(CallbackInfoReturnable<Boolean> cir) {
-        if (this.getCurrentWorld().isClient()) {
+		Entity entity = (Entity) (Object) this;
+		if (this.collisionFix$getCurrentWorld().isClientSide() && (EntityCollisionManager.shouldCollide(entity))) {
             cir.setReturnValue(false);
         }
     }
 
 	@Unique
-	private World getCurrentWorld() {
-		//? if >=1.21.9 {
-		return this.getEntityWorld();
-		//?} else {
-		/*return this.getWorld();
-		*///?}
+	private Level collisionFix$getCurrentWorld() {
+		return this.level();
 	}
 }

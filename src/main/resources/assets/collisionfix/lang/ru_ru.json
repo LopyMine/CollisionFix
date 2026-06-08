@@ -1,0 +1,26 @@
+{
+	"modmenu.descriptionTranslation.${mod_id}": "Fabric мод, который убирает клиентские проверки на коллизию.",
+
+	"${mod_id}.modmenu.category.general.name": "Общие",
+
+	"${mod_id}.modmenu.group.main.name": "Основные",
+	"${mod_id}.modmenu.group.main.description": "Основные настройки мода.",
+
+	"${mod_id}.modmenu.option.mod_enabled.name": "Включить мод",
+	"${mod_id}.modmenu.option.mod_enabled.description": "Если включено, вы не будете сталкиваться с сущностями; если отключено — будете.",
+
+	"${mod_id}.modmenu.option.server_list.name": "§lСписок серверов",
+	"${mod_id}.modmenu.option.server_list.description": "Список IP-адресов или доменных имён серверов, где мод должен быть включён или отключён.",
+
+	"${mod_id}.modmenu.option.server_list_mode.name": "Режим списка серверов",
+	"${mod_id}.modmenu.option.server_list_mode.description": "Определяет, как трактовать список серверов: как чёрный или белый список.",
+
+	"${mod_id}.list_mode.blacklist": "Чёрный список",
+	"${mod_id}.list_mode.whitelist": "Белый список",
+
+	"${mod_id}.modmenu.group.entity_list.name": "Список сущностей",
+	"${mod_id}.modmenu.group.entity_list.description": "Настройки столкновений с отдельными сущностями.",
+
+	"${mod_id}.modmenu.option.entity.name": "Коллизия %s",
+	"${mod_id}.modmenu.option.entity.description": "Если включено, вы будете сталкиваться с %s; если отключено — не будете."
+}

@@ -1,18 +1,19 @@
 package net.lopymine.collisionfix;
 
-import org.slf4j.Logger;
+import net.lopymine.mossylib.logger.MossyLogger;
+import net.minecraft.network.chat.*;
 
-import com.mojang.logging.LogUtils;
-import net.fabricmc.api.ModInitializer;
+public class CollisionFix {
 
-public class CollisionFix implements ModInitializer {
-    /**
-     * Runs the mod initializer.
-     */
-    public static final Logger LOGGER = LogUtils.getLogger();
+	public static final String MOD_NAME = /*$ mod_name*/ "Collision Fix";
+	public static final String MOD_ID = /*$ mod_id*/ "collisionfix";
+	public static final MossyLogger LOGGER = new MossyLogger(MOD_NAME);
 
-    @Override
-    public void onInitialize() {
-        LOGGER.info("Collision Fix Initialized");
-    }
+	public static MutableComponent text(String path, Object... args) {
+		return Component.translatable(String.format("%s.%s", MOD_ID, path), args);
+	}
+
+	public static void onInitializeClient() {
+		LOGGER.info("{} Initialized", MOD_NAME);
+	}
 }

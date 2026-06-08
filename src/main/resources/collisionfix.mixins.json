@@ -3,11 +3,11 @@
 	"package": "net.lopymine.collisionfix.mixin",
 	"refmap": "${mod_id}.refmap.json",
 	"compatibilityLevel": "JAVA_${java}",
-	"mixins": [
-	],
+	"mixins": [],
 	"client": [
 		"EntityMixin",
-		"LivingEntityMixin"
+		"LivingEntityMixin",
+		"EntityTypeMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
